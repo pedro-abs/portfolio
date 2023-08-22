@@ -6,6 +6,9 @@ import {
   Roboto_Serif as RobotoSerif,
 } from 'next/font/google'
 
+import { ThemeProvider } from '@/lib/theme-provider'
+import { ModeToggle } from '@/components/ModeToggle'
+
 const robotoFlex = RobotoFlex({
   subsets: ['latin'],
   variable: '--font-roboto-flex',
@@ -28,11 +31,15 @@ export default function RootLayout({
   return (
     <html
       lang="pt-br"
+      suppressHydrationWarning
       className={`${robotoFlex.variable} ${robotoSerif.variable} font-sans`}
     >
-      <body className="bg-zinc-50">
-        <Header />
-        {children}
+      <body className="bg-light-bg text-light-primary dark:bg-dark-bg dark:text-dark-primary">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <Header />
+          {children}
+          <ModeToggle />
+        </ThemeProvider>
       </body>
     </html>
   )

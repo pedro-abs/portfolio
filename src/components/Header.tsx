@@ -6,11 +6,8 @@ export const Header = () => {
       <h1 className="text-lg font-bold leading-none">Pedro Augusto</h1>
       <nav>
         <ul className="flex flex-wrap items-center justify-center gap-4">
-          <Nav>Home</Nav>
-          <Nav>Home</Nav>
-          <Nav>Home</Nav>
-          <Nav>Home</Nav>
-          <Nav>Home</Nav>
+          <Nav>About</Nav>
+          <Nav>Projects</Nav>
         </ul>
       </nav>
     </header>
@@ -20,7 +17,9 @@ export const Header = () => {
 const Nav = ({ children }: { children: string }) => {
   return (
     <li>
-      <Link href={''}>{children}</Link>
+      <Link href={''} className="hover:cursor-not-allowed">
+        {children}
+      </Link>
     </li>
   )
 }
