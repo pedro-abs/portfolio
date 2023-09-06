@@ -16,11 +16,11 @@ export const Menu = () => {
   return (
     <Sheet>
       <SheetTrigger className="block sm:hidden">
-        <Button variant={'outline'} size={'icon'}>
+        <Button variant={'outline'} size={'icon'} className="bg-transparent/10">
           <MenuIcon />
         </Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="bg-light-bg dark:bg-dark-bg">
         <SheetHeader>
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>

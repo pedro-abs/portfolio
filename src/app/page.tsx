@@ -31,7 +31,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-        <div className="relative h-80 w-80 max-w-xs">
+        <div className="relative flex h-80 w-80 max-w-xs items-center justify-center">
           <Image
             src={img}
             alt={''}
