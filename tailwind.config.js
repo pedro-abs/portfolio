@@ -11,27 +11,7 @@ module.exports = {
       },
     },
     extend: {
-      fontFamily: {
-        sans: 'var(--font-roboto-flex)',
-        serif: 'var(--font-roboto-serif)',
-      },
       colors: {
-        light: {
-          bg: '#f8fafc',
-          'bg-spc': '#FFF',
-          primary: '#25282B',
-          secondary: '#737373',
-          accent: '#92400e',
-          'accent-hover': '#78350f',
-        },
-        dark: {
-          bg: '#2E2E2E',
-          'bg-spc': '#080808',
-          primary: '#EEE',
-          secondary: '#A7A6A6',
-          accent: '#C45714',
-          'accent-hover': '#B55112',
-        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

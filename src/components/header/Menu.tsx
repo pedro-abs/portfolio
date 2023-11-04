@@ -7,9 +7,9 @@ import {
   SheetTrigger,
 } from '@/components/ui/sheet'
 import { MenuIcon } from 'lucide-react'
-import { Button } from './ui/button'
-import { Separator } from './ui/separator'
-import { ModeToggle } from './ModeToggle'
+import { Button } from '../ui/button'
+import { Separator } from '../ui/separator'
+import { ModeToggle } from '../ModeToggle'
 import { Nav } from './Nav'
 
 export const Menu = () => {
@@ -20,7 +20,7 @@ export const Menu = () => {
           <MenuIcon />
         </Button>
       </SheetTrigger>
-      <SheetContent className="bg-light-bg dark:bg-dark-bg">
+      <SheetContent>
         <SheetHeader>
           <SheetTitle>Menu</SheetTitle>
         </SheetHeader>
