@@ -1,5 +1,6 @@
 import './globals.css'
 
+import { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import {
   Roboto_Flex as RobotoFlex,
@@ -9,7 +10,6 @@ import {
 import { Header } from '@/components/header/Header'
 
 import { ThemeProvider } from '@/lib/theme-provider'
-import { ReactNode } from 'react'
 
 const robotoFlex = RobotoFlex({
   subsets: ['latin'],

@@ -39,7 +39,7 @@ export const Hello = () => {
 
 const Socials = ({ children, href }: { children: ReactNode; href: string }) => {
   return (
-    <Button className="rounded-md bg-muted-foreground/30" variant={'outline'}>
+    <Button className="rounded-md bg-background" variant={'secondary'}>
       <Link href={href} rel="noopener noreferrer" target="_blank">
         {children}
       </Link>
